@@ -1,0 +1,349 @@
+/*
+    Kontak CSS
+    -------------------------------------------------------
+    Gunakan untuk styling halaman kontak.
+    CSS ini kompatibel dengan struktur HTML yang diberikan.
+*/
+
+/* --- Umum --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8EFE3; /* bg-orange-soft */
+    color: #322514; /* text-dark */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: #ffffff; /* bg-white */
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #5C4B3E; /* text-brown */
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.menu-button {
+    color: #5C4B3E; /* text-brown */
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.nav-menu {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: #4C3C2F; /* text-dark-brown */
+    transition: color 0.2s;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #E7A56F; /* text-orange-normal */
+}
+
+/* --- Responsif Navbar --- */
+@media (max-width: 767px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        gap: 1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* --- Heading dan Teks --- */
+.display-4 {
+    font-size: 2.25rem; /* ~36px */
+    font-weight: 700;
+}
+
+.display-5 {
+    font-size: 1.875rem; /* ~30px */
+    font-weight: 700;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-brown {
+    color: #5C4B3E;
+}
+
+.lead {
+    font-size: 1.25rem; /* ~20px */
+    color: #4C3C2F;
+}
+
+.text-secondary {
+    color: #4C3C2F;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Tata Letak Kontak --- */
+.d-flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+.gap-6 {
+    gap: 1.5rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.bg-orange-soft {
+    background-color: #F8EFE3;
+}
+
+/* Responsif untuk kontak */
+@media (min-width: 768px) {
+    .md\:flex-row {
+        flex-direction: row;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .justify-content-md-start {
+        justify-content: flex-start;
+    }
+}
+
+/* --- Formulir Kontak --- */
+.form-label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #5C4B3E;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #E7A56F;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #322514;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #5C4B3E;
+    box-shadow: 0 0 0 2px rgba(92, 75, 62, 0.2);
+}
+
+.d-grid {
+    display: grid;
+}
+
+.btn-warning {
+    background-color: #E7A56F;
+    color: #4C3C2F;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-warning:hover {
+    background-color: #E19453;
+    transform: translateY(-2px);
+}
+
+/* --- Media Sosial --- */
+.hover-scale-105 {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale-105:hover {
+    transform: scale(1.05);
+}
+
+/* --- FAQ Section --- */
+.faq-item {
+    border-bottom: 1px solid #D2B48C;
+    padding: 1rem 0;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #5C4B3E;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0 1rem;
+    color: #4C3C2F;
+}
+
+.faq-answer.active {
+    max-height: 200px; /* Nilai perkiraan, sesuaikan jika perlu */
+    padding: 1rem;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #4C3C2F; /* bg-dark-brown */
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #E7A56F;
+    text-decoration: underline;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}

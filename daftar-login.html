@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar & Login - EMBONG WUNGU COFFEE</title>
+    <!-- Font Inter dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Menautkan file CSS lokal -->
+    <link rel="stylesheet" href="daftar-login.css">
+    <style>
+        /* CSS Tambahan untuk body, untuk memastikan semua elemen terisi dengan benar */
+        body {
+            padding-top: 5rem;
+        }
+    </style>
+</head>
+<body class="bg-orange-soft text-dark">
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">EMBONG WUNGU COFFEE</a>
+            <button class="menu-button" id="menuButton">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="profil-umkm.html">Profil UMKM</a>
+                <a href="artikel-tips.html">Artikel & Tips</a>
+                <a href="daftar-login.html">Daftar & Login</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian Daftar & Login -->
+        <section id="daftar-login" class="section-padding">
+            <div class="card shadow-lg rounded-xl p-8">
+                <!-- Nav tabs -->
+                <div class="tab-nav" id="authTabs">
+                    <button class="tab-nav-button active" data-tab="registrasi">REGISTRASI</button>
+                    <button class="tab-nav-button" data-tab="login">LOGIN</button>
+                </div>
+
+                <!-- Tab content -->
+                <div class="tab-content">
+                    <!-- Registrasi Pane -->
+                    <div class="tab-pane active" id="registrasi">
+                        <h3 class="display-5 font-bold text-brown mb-4 text-center">REGISTRASI</h3>
+                        <p class="text-secondary mb-4 text-center">Daftar untuk mendapatkan akses ke penawaran eksklusif dan riwayat pesanan Anda.</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="reg-name" class="form-label">Nama Lengkap</label>
+                                <input type="text" id="reg-name" name="reg-name" class="form-control" placeholder="Nama Lengkap Anda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="reg-email" class="form-label">Email</label>
+                                <input type="email" id="reg-email" name="reg-email" class="form-control" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="reg-password" class="form-label">Kata Sandi</label>
+                                <input type="password" id="reg-password" name="reg-password" class="form-control" placeholder="********">
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-warning">Daftar</button>
+                            </div>
+                            <p class="text-center text-secondary small-text mt-3">Dengan mendaftar, Anda menyetujui <a href="#" class="text-brown text-decoration-none hover-underline">Kebijakan Privasi</a> kami.</p>
+                        </form>
+                    </div>
+
+                    <!-- Login Pane -->
+                    <div class="tab-pane" id="login">
+                        <h3 class="display-5 font-bold text-brown mb-4 text-center">LOGIN</h3>
+                        <p class="text-secondary mb-4 text-center">Masuk ke akun Anda untuk pengalaman yang lebih personal.</p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="login-email" class="form-label">Email</label>
+                                <input type="email" id="login-email" name="login-email" class="form-control" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="login-password" class="form-label">Kata Sandi</label>
+                                <input type="password" id="login-password" name="login-password" class="form-control" placeholder="********">
+                            </div>
+                            <div class="d-grid mb-3">
+                                <button type="submit" class="btn btn-warning">LOGIN</button>
+                            </div>
+                            <a href="#" class="d-block text-center font-bold text-brown text-decoration-none small-text">Lupa Kata Sandi?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 EMBONG WUNGU COFFEE. Semua Hak Dilindungi Undang-Undang.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Menautkan file JavaScript lokal -->
+    <script src="daftar-login.js"></script>
+</body>
+</html>

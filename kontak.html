@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - EMBONG WUNGU COFFEE</title>
+    <link rel="stylesheet" href="kontak.css">
+</head>
+<body class="bg-orange-soft text-dark">
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">EMBONG WUNGU COFFEE</a>
+            <button class="menu-button" id="menuButton">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html">Beranda</a>
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="profil-umkm.html">Profil UMKM</a>
+                <a href="artikel-tips.html">Artikel & Tips</a>
+                <a href="daftar-login.html">Daftar & Login</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bagian Kontak -->
+        <section id="kontak" class="bg-white section-padding">
+            <div class="container text-center">
+                <h2 class="display-4 font-bold text-brown mb-5">Hubungi Kami</h2>
+                <p class="lead text-secondary mb-5 mx-auto" style="max-width: 700px;">Kami senang mendengar dari Anda! Jangan ragu untuk menghubungi kami untuk pertanyaan, saran, atau pemesanan.</p>
+
+                <!-- Sub-bagian Formulir & Media Sosial -->
+                <div id="formulir-media-sosial" class="d-flex flex-col md:flex-row gap-8">
+                    <!-- Formulir Kontak -->
+                    <div class="card p-8 bg-orange-soft w-full col-md-6">
+                        <h3 class="display-5 font-bold text-brown mb-4">Kirim Pesan</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="contact-name" class="form-label">Nama Lengkap</label>
+                                <input type="text" id="contact-name" name="contact-name" class="form-control" placeholder="Nama Anda">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contact-email" class="form-label">Email</label>
+                                <input type="email" id="contact-email" name="contact-email" class="form-control" placeholder="email@example.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="contact-message" class="form-label">Pesan Anda</label>
+                                <textarea id="contact-message" name="contact-message" rows="6" class="form-control" placeholder="Tulis pesan Anda di sini..."></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-warning">Kirim Pesan</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Media Sosial & Kontak Cepat -->
+                    <div class="card p-8 bg-orange-soft w-full col-md-6">
+                        <h3 class="display-5 font-bold text-brown mb-4">Temukan Kami di Media Sosial</h3>
+                        <p class="lead text-secondary mb-4">Ikuti kami di media sosial untuk mendapatkan update terbaru, promo menarik, dan konten seputar kopi!</p>
+                        <div class="d-flex justify-content-center justify-content-md-start gap-4 mb-5">
+                            <a href="https://www.instagram.com/yourcoffeeshop" target="_blank" class="text-secondary text-decoration-none hover-scale-105" style="font-size: 2.5rem;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/yourcoffeeshop" target="_blank" class="text-secondary text-decoration-none hover-scale-105" style="font-size: 2.5rem;">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@yourcoffeeshop" target="_blank" class="text-secondary text-decoration-none hover-scale-105" style="font-size: 2.5rem;">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.me/6281234567890" target="_blank" class="text-secondary text-decoration-none hover-scale-105" style="font-size: 2.5rem;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <h3 class="display-5 font-bold text-brown mb-4">Pertanyaan Umum (FAQ)</h3>
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <button class="faq-question font-semibold text-dark text-left w-full" data-faq="faq1">
+                                    Apakah ada Wi-Fi gratis? <i class="fas fa-chevron-down float-right"></i>
+                                </button>
+                                <div class="faq-answer text-secondary" id="faq1">
+                                    <p>Ya, kami menyediakan Wi-Fi gratis untuk semua pelanggan kami.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question font-semibold text-dark text-left w-full" data-faq="faq2">
+                                    Apakah bisa pesan online? <i class="fas fa-chevron-down float-right"></i>
+                                </button>
+                                <div class="faq-answer text-secondary" id="faq2">
+                                    <p>Tentu, Anda bisa memesan melalui WhatsApp atau aplikasi GoFood/GrabFood.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 EMBONG WUNGU COFFEE. Semua Hak Dilindungi Undang-Undang.</p>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <a href="tentang-kami.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="kontak.js"></script>
+</body>
+</html>

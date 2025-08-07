@@ -1,0 +1,270 @@
+/*
+    Artikel & Tips CSS
+    -------------------------------------------------------
+    Gunakan untuk styling halaman artikel dan tips.
+    CSS ini kompatibel dengan struktur HTML yang diberikan.
+*/
+
+/* --- Umum --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8EFE3; /* bg-orange-soft */
+    color: #322514; /* text-dark */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* --- Navbar --- */
+.navbar {
+    background-color: #ffffff; /* bg-white */
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #5C4B3E; /* text-brown */
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.menu-button {
+    color: #5C4B3E; /* text-brown */
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.nav-menu {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: #4C3C2F; /* text-dark-brown */
+    transition: color 0.2s;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #E7A56F; /* text-orange-normal */
+}
+
+/* --- Responsif Navbar --- */
+@media (max-width: 767px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        gap: 1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* --- Heading dan Teks --- */
+.display-4 {
+    font-size: 2.25rem; /* ~36px */
+    font-weight: 700;
+}
+
+.display-5 {
+    font-size: 1.875rem; /* ~30px */
+    font-weight: 700;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-brown {
+    color: #5C4B3E;
+}
+
+.lead {
+    font-size: 1.25rem; /* ~20px */
+    color: #4C3C2F;
+}
+
+.text-secondary {
+    color: #4C3C2F;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* --- Grid dan Kartu Artikel --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #ffffff; /* bg-white */
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #5C4B3E;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #4C3C2F;
+    flex-grow: 1;
+}
+
+.btn-link {
+    display: inline-block;
+    color: #E7A56F;
+    text-decoration: none;
+    margin-top: auto;
+    transition: color 0.2s;
+}
+
+.btn-link:hover {
+    color: #5C4B3E;
+}
+
+.small-text {
+    font-size: 0.875rem;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.ml-1 {
+    margin-left: 0.25rem;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #4C3C2F; /* bg-dark-brown */
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #E7A56F;
+    text-decoration: underline;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}
