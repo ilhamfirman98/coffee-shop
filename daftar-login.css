@@ -1,10 +1,3 @@
-/*
-    Daftar & Login CSS
-    -------------------------------------------------------
-    Gunakan untuk styling halaman pendaftaran dan login.
-    CSS ini kompatibel dengan struktur HTML yang diberikan.
-*/
-
 /* --- Umum --- */
 body {
     font-family: 'Inter', sans-serif;
@@ -299,3 +292,4 @@ main {
 .gap-3 {
     gap: 1rem;
 }
+
