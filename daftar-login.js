@@ -1,10 +1,3 @@
-/*
-    Daftar & Login JS
-    -------------------------------------------------------
-    Skrip ini menangani fungsionalitas menu navigasi
-    dan tab pendaftaran/login.
-*/
-
 // --- Fungsionalitas Menu Navigasi (Mobile) ---
 const menuButton = document.getElementById('menuButton');
 const navMenu = document.getElementById('navMenu');
@@ -46,3 +39,4 @@ if (authTabs) {
         }
     });
 }
+
