@@ -1,9 +1,3 @@
-/*
-    Artikel & Tips CSS
-    -------------------------------------------------------
-    Gunakan untuk styling halaman artikel dan tips.
-    CSS ini kompatibel dengan struktur HTML yang diberikan.
-*/
 
 /* --- Umum --- */
 body {
@@ -268,3 +262,4 @@ body {
 .mt-3 {
     margin-top: 1rem;
 }
+
