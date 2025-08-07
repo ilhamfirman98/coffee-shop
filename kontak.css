@@ -1,11 +1,3 @@
-/*
-    Kontak CSS
-    -------------------------------------------------------
-    Gunakan untuk styling halaman kontak.
-    CSS ini kompatibel dengan struktur HTML yang diberikan.
-*/
-
-/* --- Umum --- */
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F8EFE3; /* bg-orange-soft */
@@ -347,3 +339,4 @@ body {
 .mt-3 {
     margin-top: 1rem;
 }
+
